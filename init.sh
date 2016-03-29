@@ -1,39 +1,73 @@
 #!/bin/bash
 
-### VARIABLES ###
+### VARS ###
 repository=git@github.com:slashadmin/frontend-template.git
-current_folder=${PWD##*/}
+npmcmd="npm install --save-dev"
+npm_dependencies=( \
+    'glob' 'grunt' 'jit-grunt' \
+    'grunt-contrib-watch' \
+    'grunt-contrib-uglify' \
+    'grunt-contrib-jshint' \
+    'grunt-contrib-imagemin' \
+    'grunt-newer' \
+    'grunt-sass' \
+    'grunt-rsync' \
+    'grunt-browser-sync' \
+    'grunt-postcss' \
+    'autoprefixer' \
+    )
+bowercmd="bower install -S"
+bower_dependencies=( \
+    'inuit-starter-kit' \
+    )
 tmp_folder=_tmp_frontend_template
+current_folder=${PWD##*/}
+
 
 ### FUNCTIONS ###
 ask () {
-
+    read -p "$1 ($2): " value
+    value=${value:-$2}
+    echo $value
 }
 
-replace_variable_with_in_file () {
-    sed 's/{{__$1__}}/$2/g' $3 > $3
-}
-
-# echo "Project name: ($current_folder)"
-# read project_name
-# if project_name == '' then
-#     project_name=current_folder
-# fi
-
-# read -p "Enter: " name
-# name=${name:-$current_folder}
-# echo $name
 
 ### ASK FOR INPUT ###
-# project_name=$(ask "Project name" $current_folder)
-# echo $project_name
+variables=( 'project_name' 'src_path' 'dist_path')
+project_name=$(ask "Project name" "$current_folder")
+src_path=$(ask "Src path" "src")
+dist_path=$(ask "Dist path" "dist")
 
-### CLONE AND COPY SOURCE FILES ###
+### CLONE TEMPLATE FILES ###
 echo "Cloning Repository"
-git clone $repository $tmp_folder
-echo "Copy files"
-cp $tmp_folder/* .
+git clone $repository $tmp_folder #DEV: cp -r ../frontend-template ./$tmp_folder
 
-### UPDATE VARIABLES IN TEMPLATES ###
-# replace_variable_with_in_file project_name $project_name
+### SET VARIABLES IN TEMPLATES ###
+echo "Setting variables"
+findcmd="find -E ./$tmp_folder -type f -regex '.*\.(js|json|scss)' -exec sed -i ''"
+for element in ${variables[@]}
+do
+    findcmd="$findcmd -e 's/__${element}__/${!element}/g'"
+done
+eval "$findcmd {} +"
+
+### COPY FILES TO THEIR DESTINATION ###
+echo "Copy files"
+cp $tmp_folder/template/*.* .
+mv ./$tmp_folder/template/src ./$src_path
+mv ./$tmp_folder/template/dist ./$dist_path
+rm -rf $tmp_folder
+
+### INSTALL DEPENDENCIES ###
+for element in ${bower_dependencies[@]}
+do
+    bowercmd="$bowercmd ${element}"
+done
+eval $bowercmd
+
+for element in ${npm_dependencies[@]}
+do
+    npmcmd="$npmcmd ${element} "
+done
+eval $npmcmd
 

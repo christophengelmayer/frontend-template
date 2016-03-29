@@ -1,0 +1,89 @@
+// bower install --S inuit-starter-kit
+
+/**
+ * #SETTINGS
+ */
+@import "bower_components/inuit-defaults/settings.defaults";
+// @import "settings.project";
+// @import "bower_components/inuit-responsive-settings/settings.responsive"; // bower install -S inuit-responsive-settings
+
+
+
+
+
+/**
+ * #TOOLS
+ */
+@import "bower_components/inuit-functions/tools.functions";
+@import "bower_components/inuit-mixins/tools.mixins";
+// @import "bower_components/inuit-responsive-tools/tools.responsive"; // bower install -S inuit-responsive-tools
+// @import "bower_components/inuit-tools-widths/tools.widths"; // bower install -S inuit-tools-widths
+
+
+
+
+
+/**
+ * #GENERIC
+ */
+@import "bower_components/inuit-normalize/generic.normalize";
+// @import "bower_components/inuit-reset/generic.reset"; // bower install -S inuit-reset
+@import "bower_components/inuit-box-sizing/generic.box-sizing";
+// @import "bower_components/inuit-shared/generic.shared"; // bower install -S inuit-shared
+
+
+
+
+
+/**
+ * #BASE
+ */
+// @import "bower_components/inuit-headings/base.headings"; // bower install -S inuit-headings
+// @import "bower_components/inuit-paragraphs/base.paragraphs"; // bower install -S inuit-paragraphs
+// @import "bower_components/inuit-lists/base.lists"; // bower install -S inuit-lists
+// @import "bower_components/inuit-images/base.images"; // bower install -S inuit-images
+@import "bower_components/inuit-page/base.page";
+
+
+
+
+
+/**
+ * #OBJECTS
+ */
+// @import "bower_components/inuit-block/objects.block"; // bower install -S inuit-block
+// @import "bower_components/inuit-box/objects.box"; // bower install -S inuit-box
+// @import "bower_components/inuit-buttons/objects.buttons"; // bower install -S inuit-buttons
+// @import "bower_components/inuit-flag/objects.flag"; // bower install -S inuit-flag
+// @import "bower_components/inuit-layout/objects.layout"; // bower install -S inuit-layout
+// @import "bower_components/inuit-list-bare/objects.list-bare"; // bower install -S inuit-list-bare
+// @import "bower_components/inuit-list-block/objects.list-block"; // bower install -S inuit-list-block
+// @import "bower_components/inuit-list-inline/objects.list-inline"; // bower install -S inuit-list-inline
+// @import "bower_components/inuit-list-ui/objects.list-ui"; // bower install -S inuit-list-ui
+// @import "bower_components/inuit-media/objects.media"; // bower install -S inuit-media
+// @import "bower_components/inuit-pack/objects.pack"; // bower install -S inuit-pack
+// @import "bower_components/inuit-tables/objects.tables"; // bower install -S inuit-tables
+// @import "bower_components/inuit-tabs/objects.tabs"; // bower install -S inuit-tabs
+
+
+
+
+
+/**
+ * #COMPONENTS
+ */
+
+
+
+
+
+/**
+ * #TRUMPS
+ */
+// @import "bower_components/inuit-clearfix/trumps.clearfix"; // bower install -S inuit-clearfix
+// @import "bower_components/inuit-headings-trumps/trumps.headings"; // bower install -S inuit-headings-trumps
+// @import "bower_components/inuit-spacing/trumps.spacing"; // bower install -S inuit-spacing
+// @import "bower_components/inuit-spacing-responsive/trumps.spacing-responsive"; // bower install -S inuit-spacing-responsive
+// @import "bower_components/inuit-widths/trumps.widths"; // bower install -S inuit-widths
+// @import "bower_components/inuit-widths-responsive/trumps.widths-responsive"; // bower install -S inuit-widths-responsive
+// @import "bower_components/inuit-print/trumps.print"; // bower install -S inuit-print
