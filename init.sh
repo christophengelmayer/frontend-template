@@ -47,7 +47,7 @@ echo "Setting variables"
 findcmd="find -E ./$tmp_folder -type f -regex '.*\.(js|json|scss)' -exec sed -i ''"
 for element in ${variables[@]}
 do
-    findcmd="$findcmd -e 's/__${element}__/${!element}/g'"
+    findcmd="$findcmd -e 's,__${element}__,${!element},g'"
 done
 eval "$findcmd {} +"
 
