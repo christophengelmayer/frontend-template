@@ -10,6 +10,6 @@ module.exports = {
         ]
     },
     dist: {
-        src: '<%= settings.dist %>/css/*.css'
+        src: '<%= paths.dist %>/css/*.css'
     }
 }

@@ -1,13 +1,16 @@
 module.exports = function(grunt) {
-  require('jit-grunt')(grunt);
-
-  grunt.loadTasks('__src_path__/grunt/tasks');
   var config = {
-    pkg: grunt.file.readJSON('package.json'),
-    settings: grunt.file.readJSON('__src_path__/grunt/settings.json')
+    paths: {
+        src: "src",
+        dist: "dist"
+    }
   };
 
-  grunt.util._.extend(config, loadConfig('./__src_path__/grunt/options/'));
+  require('jit-grunt')(grunt);
+  config.pkg = grunt.file.readJSON('package.json');
+  config.settings = grunt.file.readJSON(config.paths.src+'/grunt/settings.json'),
+  grunt.loadTasks(config.paths.src+'/grunt/tasks');
+  grunt.util._.extend(config, loadConfig('./'+config.paths.src+'/grunt/options/'));
   grunt.initConfig(config);
 }
 

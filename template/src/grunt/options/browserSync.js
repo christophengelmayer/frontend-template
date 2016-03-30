@@ -1,8 +1,8 @@
 module.exports = {
 	bsFiles: {
 		src: [
-            '<%= settings.dist %>/css/*.css',
-            '<%= settings.dist %>/js/**/*.js',
+            '<%= paths.dist %>/css/*.css',
+            '<%= paths.dist %>/js/**/*.js',
         ]
 	},
 	options: {

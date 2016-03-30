@@ -1,3 +1,3 @@
 module.exports = {
-	dist: ['<%= settings.src %>/js/**/*.js']
+	dist: ['<%= paths.src %>/js/**/*.js']
 }

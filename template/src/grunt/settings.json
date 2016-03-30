@@ -1,7 +1,4 @@
 {
-	"src": "__src_path__",
-	"dist": "__dist_path__",
-
 	"rsync": {
 		"src" :		".",
 		"dest" :	"",

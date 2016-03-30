@@ -4,9 +4,9 @@ module.exports = {
     },
     js: {
         files: {
-            '<%= settings.dist %>/js/script.min.js':
+            '<%= paths.dist %>/js/script.min.js':
             [
-                '<%= settings.src %>/js/script.js'
+                '<%= paths.src %>/js/script.js'
             ]
         }
     }

@@ -5,7 +5,7 @@ module.exports = {
       sourceMap: true
     },
     files: {
-	'<%= settings.dist %>/css/style.min.css': '<%= settings.src %>/scss/style.scss'
+	'<%= paths.dist %>/css/style.min.css': '<%= paths.src %>/scss/style.scss'
     }
   }
 }

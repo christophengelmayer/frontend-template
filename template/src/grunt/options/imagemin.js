@@ -5,9 +5,9 @@ module.exports = {
 		},
 		files: [{
 			expand: true,
-			cwd: '<%= settings.src %>/img/',
+			cwd: '<%= paths.src %>/img/',
 			src: ['**/*.{png,jpg,gif,svg}'],
-			dest: '<%= settings.dist %>/img/'
+			dest: '<%= paths.dist %>/img/'
 		}]
 	}
 }
