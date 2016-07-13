@@ -1,0 +1,110 @@
+/*------------------------------------*\
+   #DEFAULTS
+\*------------------------------------*/
+// $inuit-base-font-size:          16px;
+// $inuit-base-line-height:        24px;
+// $inuit-base-text-color:         #333;
+// $inuit-base-background-color:   #fff;
+
+
+
+/*------------------------------------*\
+   #VARIABLES
+\*------------------------------------*/
+$bsu:               $inuit-base-spacing-unit;
+$bsu--tiny:         round($inuit-base-spacing-unit--small / 2);
+$bsu--small:        $inuit-base-spacing-unit--small;
+$bsu--large:        $inuit-base-spacing-unit--large;
+
+$color--base:       $inuit-base-text-color;
+$color--primary:    #28588f;
+$color--secondary:  #c2df93;
+
+$font-family--base: Arial, sans-serif;
+
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+// $inuit-heading-size-1:  27px;
+// $inuit-heading-size-2:  20px;
+// $inuit-heading-size-3:  16px;
+// $inuit-heading-size-4:  14px;
+// $inuit-heading-size-5:  18px;
+// $inuit-heading-size-6:  14px;
+
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+// $inuit-enable-layout--tiny:     true;
+// $inuit-enable-layout--small:    true;
+// $inuit-enable-layout--large:    true;
+// $inuit-enable-layout--huge:     true;
+// $inuit-enable-layout--flush:    true;
+// $inuit-enable-layout--rev:      true;
+// $inuit-enable-layout--middle:   true;
+// $inuit-enable-layout--bottom:   true;
+// $inuit-enable-layout--right:    true;
+// $inuit-enable-layout--center:   true;
+// $inuit-enable-layout--auto:     true;
+
+
+/*------------------------------------*\
+   #SETTINGS-RESPONSIVE
+\*------------------------------------*/
+// $breakpoints: (
+//     "palm"          "screen and (max-width: 44.9375em)",
+//     "lap"           "screen and (min-width: 45em) and (max-width: 63.9375em)",
+//     "lap-and-up"    "screen and (min-width: 45em)",
+//     "portable"      "screen and (max-width: 63.9375em)",
+//     "desk"          "screen and (min-width: 64em)",
+//     "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)"
+// );
+
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+// $inuit-btn-padding:         halve($inuit-base-spacing-unit);
+// $inuit-btn-padding--small:  halve($inuit-btn-padding);
+// $inuit-btn-padding--large:  double($inuit-btn-padding);
+// $inuit-btn-background:      $color--primary;
+// $inuit-btn-color:           #fff;
+// $inuit-btn-border-width:    1px;
+// $inuit-btn-border-style:    solid;
+// $inuit-btn-border-color:    $color--primary;
+// $inuit-btn-radius:          3px;
+
+// $inuit-enable-btn--small:   true;
+// $inuit-enable-btn--large:   true;
+// $inuit-enable-btn--full:    true;
+// $inuit-enable-btn--pill:    true;
+
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+// $inuit-enable-margins:                  true;
+// $inuit-enable-margins--tiny:            true;
+// $inuit-enable-margins--small:           true;
+// $inuit-enable-margins--large:           true;
+// $inuit-enable-margins--huge:            true;
+
+// $inuit-enable-margins--negative:        true;
+// $inuit-enable-margins--negative-tiny:   true;
+// $inuit-enable-margins--negative-small:  true;
+// $inuit-enable-margins--negative-large:  true;
+// $inuit-enable-margins--negative-huge:   true;
+
+// $inuit-enable-margins--none:            true;
+
+// $inuit-enable-paddings:                 true;
+// $inuit-enable-paddings--tiny:           true;
+// $inuit-enable-paddings--small:          true;
+// $inuit-enable-paddings--large:          true;
+// $inuit-enable-paddings--huge:           true;
+
+// $inuit-enable-paddings--none:           true;
+
+
